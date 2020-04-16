@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gradient Background</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body id="gradient">
+	<h1 class= "animated flip">Background Generator</h1>
+	<input class="color1" type="color" name="color1" value="#6a42bd">
+	<input class="color2" type="color" name="color2" value="#ff0000">
+	<div class="buffer col-12"></div>
+	<main class="grid">
+          <article>
+            <div class="text">
+              <strong><p id="text1"></p></strong>
+              <button class="btn" data-clipboard-target="#text1">Copy Code</button>
+            </div>
+          </article>
+      
+
+	
+    <script type="text/javascript" src="script.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.4/clipboard.min.js"></script>
+	<script>
+		new ClipboardJS(".btn");
+	</script>
+</body>
+</html>

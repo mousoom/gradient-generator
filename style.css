@@ -1,0 +1,84 @@
+@import "animate.css";
+
+body {
+	font: 'Raleway', sans-serif;
+    text-align: center;
+	background: linear-gradient(to right, rgb(106, 66, 189), rgb(255, 0, 0)); /* Standard syntax */
+}
+
+h1 {
+    font: 600 3.5em 'Raleway', sans-serif;
+    color: rgba(0,0,0,.7);
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: .2em;
+    width: 100%;
+}
+
+/****************/
+
+.grid {
+
+  margin: 30px;
+  display: flex;
+  justify-content: center;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 20px;
+  align-items: stretch;
+
+  }
+
+.grid > article {
+  border: 1px solid #ccc;
+  box-shadow: 15px 11px 6px 0px  rgba(0,0,0,0.3);
+  border-radius: 3px;
+  text-align: center;
+}
+
+.text {
+  padding: 0 20px 20px;
+}
+
+button {
+  background-color:rgba(0,0,0,0.7);
+  border: none;
+  color: white;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+button:hover{
+  transition: transform .1s ease-out;
+  transform: translateY(5px);
+}
+
+
+@media (max-width: 768px){
+  .grid{
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0;
+  }
+  .buffer{
+    height:2rem;
+  }
+}
+
+@media (max-width: 500px){
+  .grid{
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0;
+  }
+
+  .grid > article{
+    text-align: center;
+  }
+  .buffer{
+    height:2rem;
+  }
+}
+
